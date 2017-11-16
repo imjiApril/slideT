@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>슬라이드 이미지</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/common2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/slide2.js"></script>
+  </head>
+  <body>
+    <!-- 슬라이드 -->
+    <section>
+      <article id="gallery">
+        <h2>gallery</h2>
+        <div class="slide">
+          <!-- div[class=slide-contents]>ul>li*10>div[class=wrap]>img[src=images/cat$.jpg][alt=cat$] -->
+          <div class="slide-contents">
+            <ul>
+              <li>
+                <div class="wrap"><img src="images/cat1.jpg" alt="cat1"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat2.jpg" alt="cat2"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat3.jpg" alt="cat3"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat4.jpg" alt="cat4"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat5.jpg" alt="cat5"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat6.jpg" alt="cat6"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat7.jpg" alt="cat7"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat8.jpg" alt="cat8"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat9.jpg" alt="cat9"></div>
+              </li>
+              <li>
+                <div class="wrap"><img src="images/cat10.jpg" alt="cat10"></div>
+              </li>
+            </ul>
+          </div>
+          <!-- slide-contents end -->
+
+          <!-- 이전 다음 -->
+          <button class="arrow prev">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="arrow next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+
+          <!-- 페이지버튼 -->
+          <ol id="paging">
+            <!-- li*4>a[href=#none]{$} -->
+            <!-- <li><a href="#none" class="active">1</a></li>
+            <li><a href="#none">2</a></li>
+            <li><a href="#none">3</a></li>
+            <li><a href="#none">4</a></li>
+            <li><a href="#none">5</a></li>
+            <li><a href="#none">6</a></li>
+            <li><a href="#none">7</a></li>
+            <li><a href="#none">8</a></li> -->
+          </ol>
+
+          <!-- 재생/정지 -->
+          <div id="control">
+            <button id="stop">
+              <i class="fa fa-stop"></i>
+            </button>
+            <button id="play">
+              <i class="fa fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 팝업2 -->
+    <div id="popup"></div>    
+    <div id="popup-contents">
+      <div class="popup-header">
+        <h3>이미지제목</h3>
+        <button id="close">닫기</button>
+      </div>
+      <img src="images/cat1.jpg" alt="cat1">
+      <!-- 이전 다음 -->
+      <button class="arrow prev">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button class="arrow next">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    </div>    
+    
+  </body>
+</html>
